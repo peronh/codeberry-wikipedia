@@ -52,7 +52,7 @@ background-color: -webkit-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(249,
 background-color: linear-gradient(to bottom,  rgba(249,249,249,1) 0%,rgba(249,249,249,1) 10%,rgba(206,208,216,1) 24%,rgba(232,233,236,1) 58%,rgba(249,249,249,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9',GradientType=0 );
   width:100vw;
-  min-width: 480px;
+  min-width: 800px;
   font-family: sans-serif;
 }
 
@@ -113,17 +113,14 @@ input[type=text] {
 }
 .left{
   float: left;
-  /*border-bottom:1px solid rgb(167, 215, 249);*/
 }
 .right{
   float: right;
-  /*border-bottom:1px solid rgb(167, 215, 249);*/
 }
 .read{
   background-color: #ffffff;  
   border-left:1px solid  rgb(167, 215, 249);
 }
-
 
 /*article formázás*/
 
@@ -174,7 +171,7 @@ margin: 12px 0 8px 0px;
 /* caption */
 
 #contents{
-  width:150px;
+  width:9.375rem;
   padding:10px 20px;
   margin: 12px 0;
   font-size: 13.5px;
@@ -193,22 +190,22 @@ border-bottom:1px solid rgb(162, 169, 177);
 
 /*mutans*/
 .contain{
-  width:280px;
+  width:17.5rem;
   float:right;
   background-color: #ffffff;
 }
 .mutans{
   float: right;
-  width:260px;
+  width:16.25rem;
   border:1px solid rgb(162, 169, 177);
   right:0;
-  top:85px;
+  top:5.3125rem;
   margin-top:12px ;
   padding:3px;
   background-color: #f8f9fa;
 }
  .mutans img{
-width:248px;
+width:15.5rem;
 }
 .mutans h3{
   text-align: center
@@ -231,7 +228,7 @@ td{
 /*gameplay*/
 
 .gameplay{
-width:190px;
+width:11.875rem;
 border:1px solid rgb(162, 169, 177);
 float:left;
 margin:6px 14px 28px 0;
