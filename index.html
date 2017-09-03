@@ -35,11 +35,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
       <form>
          <input type="text" name="search" placeholder="Search Wikipedia">
       </form>
-      <a class="left read" href="">Article</a>
-      <a class="left" href="">Talk</a>
-      <a class="right" href="">View history</a>  
-      <a class="right" href="">Edit</a>
-      <a class="right read" href="">Read</a> 
+      <div class="left">
+      <a class="tab" href="">Talk</a>
+      <a class="tab read" href="">Article</a>
+      
+      </div>
+      <div class="right">
+      <a class="tab" href="">View history</a>  
+      <a class="tab" href="">Edit</a>
+      <a class="tab read" href="">Read</a> 
+      </div>
     </div>
   </header>
   <article>
@@ -145,6 +150,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', end
     </ul>
     <p><a href=""><i class="fa fa-pencil" aria-hidden="true"></i>Edit links</a></p>
   </aside>
+  <div class="clear"></div>
   <footer>
     <p>This page was last edited on 10 July 2017, at 16:31.</p>
     <p>Text is available under the <a href="">Creative Commons Attribution-ShareAlike License;</a>additional terms may apply. By using this site, you agree to the <a href="">Terms of Use</a> and <a href="">Privacy Policy.</a> Wikipedia® is a registered trademark of the <a href="">Wikimedia Foundation, Inc.,</a> a non-profit organization.</p>

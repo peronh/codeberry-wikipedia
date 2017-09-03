@@ -52,13 +52,14 @@ background-color: -webkit-linear-gradient(top,  rgba(249,249,249,1) 0%,rgba(249,
 background-color: linear-gradient(to bottom,  rgba(249,249,249,1) 0%,rgba(249,249,249,1) 10%,rgba(206,208,216,1) 24%,rgba(232,233,236,1) 58%,rgba(249,249,249,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9',GradientType=0 );
   width:100vw;
-  min-width: 800px;
+  min-width: 780px;
   font-family: sans-serif;
 }
 
 /*header formázás*/
 header{
-  width:88.6%;
+  /*width:88.6%;*/
+  width: 100%;
   padding:8px 8px 0 0;
   font-size: 12px;
   text-align: right;
@@ -66,7 +67,7 @@ header{
   right:0;
   top:0;
   line-height:32px;  
-  display: inline-block;
+  /*display: inline-block;*/
 }
 .log {
 text-decoration: none;
@@ -77,25 +78,21 @@ text-decoration: none;
 }
 
 div#under a{
-background-clip: border-box;
+/*background-clip: border-box;*/
 padding:4px 4px 0 4px;
-background-color: rgb(252,254,254);
-background-color: -moz-linear-gradient(top,  rgba(252,254,254,1) 17%, rgba(236,246,248,1) 42%, rgba(216,237,242,1) 100%);
-background-color: -webkit-linear-gradient(top,  rgba(252,254,254,1) 17%,rgba(236,246,248,1) 42%,rgba(216,237,242,1) 100%);
-background-color: linear-gradient(to bottom,  rgba(252,254,254,1) 17%,rgba(236,246,248,1) 42%,rgba(216,237,242,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfefe', endColorstr='#d8edf2',GradientType=0 );
-color:#5454c7;
-display: block;
-text-decoration: none;
 height:2.6rem;
-font-size: 14px;
-border-right:1px solid  rgb(167, 215, 249);
-background-clip: border-box;
+font-size: 13px;
+border-right:1px solid rgb(167, 215, 249);
 }
 form{
   float: right
 }
 input[type=text] {
+  background: rgb(254,255,243);
+  background: -moz-radial-gradient(center, ellipse cover, rgba(254,255,243,1) 0%, rgba(234,236,222,1) 100%);
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(254,255,243,1) 0%,rgba(234,236,222,1) 100%);
+  background: radial-gradient(ellipse at center, rgba(254,255,243,1) 0%,rgba(234,236,222,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefff3', endColorstr='#eaecde',GradientType=1 );
     width: 250px;
     box-sizing: border-box;
     border: 1px solid rgb(162, 169, 177);
@@ -113,24 +110,43 @@ input[type=text] {
 }
 .left{
   float: left;
+  margin-left:11rem; 
 }
 .right{
   float: right;
 }
+.tab{
+  color:#5454c7;
+  display: block;
+  text-decoration: none;
+  float: right;
+}
+.tab:hover{
+  margin-top: .5px;
+  color:#6c6767;
+  margin-top: .5px
+}
 .read{
   background-color: #ffffff;  
-  border-left:1px solid  rgb(167, 215, 249);
+  border-left:1px solid rgb(167, 215, 249);
+  color:#6c6767;
+  margin-top: .5px
 }
+.read:hover{
+  text-decoration: none
+}
+
 
 /*article formázás*/
 
 article{
 display: inline-block;
-background-color: #ffffff;
-position:absolute;
+background-color: #ffffff;   /*!!!!!!!!!*/
+/*position:absolute;
 width:88.6%;
 top:5rem;
-right:0;
+right:0;*/
+margin: 5.1rem 0 0 11rem;
 padding:0 26px;
 font-family: sans-serif;
 font-weight: 100;
@@ -151,7 +167,7 @@ text-align:center;
 width:62rem;
 border: 0 none;
 border-top: 0.0325rem solid #a3a3a3; 
-  margin:0 24px;
+margin:0 24px;
 }
 h3{
 font-family: sans-serif;
@@ -292,7 +308,8 @@ aside {
   height:75rem;
   display: inline-block;
   color:#6f6ff2;
-  width:11.4%;
+  width: 10rem;            /*!!!!!!!!!!!!!!!!!!!!!*/
+  /*width:11.4%;*/
   left:0;
   padding-left: 8px;
   font-size: 12px;
@@ -341,13 +358,19 @@ text-decoration: none;
 span{
 font-size:12px;
 }
+.clear{
+  clear: both;
+}
 /* footer */
 
 footer{
-position:absolute;
+/*position:absolute;*/   /*!!!!!!!!!!*/
+/*float:right;*/
+  width: 100%;
+display: block;
 font-size: 11px;
 padding-left:200px;
-top:1280px;
+/*top:80rem;*/
 margin-bottom: 30px;
 }
 footer p{
@@ -358,15 +381,18 @@ footer a {
 padding-right: 8px;
 }
 .mediawiki, .wikimedia{
-  position: absolute;
- bottom:-30px;
+ /*position: absolute;*/ /*!!!!!!!!*/
  width: 110px;
 }
 .mediawiki{
-  right:24px;
+ float: right;
+ margin-right:20px
+  /*right:24px;*/
 }
 .wikimedia{
-   right:136px;
+  float: right
+   /*right:136px;*/
 }
+
 
 
